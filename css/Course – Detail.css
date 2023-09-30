@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.body-sec .head-nav {
+    width: 100%;
+    height: 50px;
+    padding-left: 1rem;
+    background-color: #FDC800;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.body-sec .head-nav span {
+    display: inline-block;
+    width: 100px;
+}
+
+.body-sec .head-nav a {
+    color: black;
+}
+
+.body-sec .head-nav i {
+    margin: 10px;
+}
+
+.body-sec .head-nav .icon {
+    position: relative;
+    left: 1rem;
+    padding-left: 350px;
+    /* background-color: black; */
+}
+
+.body-sec {
+    background-color: #F0F4F9;
+    height: 600px;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.body-sec .container .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    text-align: center;
+}
+
+.body-sec .container .main-nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.body-sec .container .main-nav .logo img {
+    width: 60px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.body-sec .container .main-nav .logo p {
+    text-transform: uppercase;
+}
+
+.body-sec .container .main-nav a.link-list {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.body-sec .container .main-nav a.link-list:hover+.nav-links {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: absolute;
+    top: 10vh;
+    left: -50px;
+    width: 300px;
+
+}
+
+.body-sec .container .main-nav .nav-links {
+    margin-left: 200px;
+}
+
+.body-sec .container .main-nav .nav-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.body-sec .container .main-nav .right-nav-sec .sign-up-style {
+    width: 90px;
+    height: 38px;
+    background-color: #FDC800;
+    border: solid 1px white;
+    border-radius: 8%;
+}
+
+.body-sec .container .main-nav .right-nav-sec a i {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 0.5rem;
+    padding-top: 10px;
+    text-align: center;
+    border: solid 1px #CCC;
+    border-radius: 8%;
+}
+
+.body-sec .container .title {
+    margin-top: 50px;
+}
+
+.body-sec .container .title h4 {
+    padding-bottom: 10px;
+    color: #FDC800;
+}
+
+section .container .second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    position: relative;
+    bottom: 300px;
+}
+
+section .container .second .box1 img {
+    width: 600px;
+    height: 400px;
+}
+
+section .container .second .box2 {
+    width: 300px;
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+section .container .second .box2 br {
+    color: #ccc;
+}
+
+section .container .second .box2 .sec {
+    padding: 10px 20px;
+    height: 40px;
+
+}
+
+section .container .second .box2 .sec span {
+    font-weight: bold;
+}
+
+section .container .second .box2 .boy {
+    text-align: center;
+}
+
+section .container .second .box2 .boy h5 {
+    color: #BDBDBD;
+}
+
+section .container .second .box2 .boy h6 {
+    color: #00B2B2;
+    font-weight: bold;
+}
+
+.description .container .desc {
+    position: relative;
+    bottom: 250px;
+}
+
+.description .container .desc h2 {
+    margin-bottom: 20px;
+}
+
+.description .container .desc .p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.description .container .desc .p span {
+    font-weight: bold;
+
+}
+
+.description .container .desc i {
+    position: relative;
+    right: 10px;
+    color: #00B2B2;
+}
+
+
+.container .story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-top: 200px;
+    position: relative;
+    bottom: 300px;
+    gap: 20px;
+}
+
+.container .story .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .story .left .picture2 {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.container .story .left .brief1 {
+    position: relative;
+    bottom: 30px;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.container .story .left .brief1 h6 {
+    color: #7f7f7f;
+}
+
+.container .story .rigth {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container .story .rigth h2 {
+    font-size: 30px;
+    position: relative;
+    bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+
+.container .story .rigth span {
+    position: relative;
+    color: #FDC800;
+}
+
+.container .story .rigth h6 {
+    width: 360px;
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 15px;
+    position: relative;
+    bottom: 90px;
+    color: #212529;
+}
+
+.container .story .rigth h5 {
+    position: relative;
+    bottom: 50px;
+}
+
+.container .story .rigth .brief2 {
+    width: 380px;
+    height: 80px;
+    background-color: #F0F4F9;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+}
+
+.container .story .rigth .brief2 .im {
+    position: relative;
+    right: 20px;
+}
+
+.container .story .rigth .brief2 h5 {
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+}
+
+.container .story .rigth .brief2 h6 {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    color: #757575;
+}
+
+section .container .input_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    bottom: 200px;
+}
+
+section .container .input_box .rigth-div {
+    position: relative;
+    bottom: 60px;
+}
+
+section .container .input_box .rigth-div h5 {
+    color: #FDC800;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+section .container .input_box .rigth-div h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+section .container .input_box .rigth-div .email {
+
+    width: 320px;
+    height: 30px;
+    border: solid 2px #ccc;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+}
+
+section .container .input_box .rigth-div .email a {
+    color: black;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+section .container .input_box .rigth-div .email input {
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border: none;
+    color: #BDBDBD;
+}
+
+section .container .input_box .rigth-div .email button {
+    margin: 2px;
+    width: 100px;
+    background-color: #FDC800;
+    border: hidden;
+    border-radius: 2px;
+    position: relative;
+    left: 12px;
+}
+
+footer {
+    background-color: #002147;
+    height: 600px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 200px;
+}
+
+footer .container .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .container .footer ul {
+    color: white;
+    list-style: none;
+}
+
+footer .container .footer .icons {
+    position: relative;
+    bottom: 50px;
+
+}
+
+footer .container .footer .icons li img {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer .container .footer .icons .to-up {
+    position: relative;
+    bottom: 10px;
+}
+
+footer .container .footer .info {
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+}
+
+footer .container .footer .info .special {
+    position: relative;
+    top: 20px;
+}
+
+footer .container .footer ul li {
+    padding-top: 20px;
+}
+
+footer .container .footer ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer .container .footer .informations {
+    position: relative;
+    bottom: 60px;
+}
+
+footer .container .footer .more {
+    position: relative;
+    top: 35px;
+}
+
+.container .copy-right {
+    position: relative;
+    bottom: 280px;
+    width: 850px;
+    height: 80px;
+    background-color: #FDC800;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .copy-right .icons {
+    padding-right: 50px;
+}
+
+.container .copy-right p {
+    padding-left: 40px;
+
+}
+
+.container .copy-right .icons a {
+    color: #002147;
+    padding-left: 20px;
+
+}
+
+@media (max-width:922px) {
+    .body-sec .container .main-nav .nav-links {
+        display: none;
+    }
+
+    .body-sec .container .main-nav a.link-list {
+        display: inline-block;
+    }
+
+    .body-sec .head-nav {
+        display: none;
+    }
+
+    section .container .second {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 20px;
+        position: relative;
+        bottom: 350px;
+
+    }
+
+    section .container .second .box2 .boy {
+        text-align: center;
+        height: 200px;
+    }
+
+    .body-sec .container .main-sec .left-sec_main {
+        display: flex;
+        gap: 20px;
+    }
+
+    .body-sec .container .main-sec .right-sec_main img {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 80px;
+        padding-bottom: 100px;
+
+    }
+
+    .bar-sec .container .upcomming .time {
+        position: relative;
+        right: 60px;
+        width: 300px;
+
+    }
+
+    .courses .container .boxes {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .container .story {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 200px;
+        position: relative;
+        bottom: 300px;
+    }
+
+
+
+    section .container .parts {
+        /* background-color: #F0F4F9; */
+        width: 700px;
+        height: 400px;
+        position: relative;
+        bottom: 200px;
+        left: 120px;
+    }
+
+    section .container .input_box {
+        padding-top: 50px;
+        display: grid;
+        gap: 100px;
+        position: relative;
+        bottom: 350px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 350px;
+    }
+
+    .container .copy-right {
+        position: relative;
+        bottom: 430px;
+        width: 500px;
+    }
+
+}

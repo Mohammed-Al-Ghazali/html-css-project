@@ -1,0 +1,756 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.go-up {
+    font-size: 40px;
+    color: green;
+    position: fixed;
+    left: 85px;
+    bottom: 50px;
+}
+
+.whatsup {
+    font-size: 40px;
+    color: black;
+    position: fixed;
+    left: 40px;
+    bottom: 60px;
+    color: green;
+
+
+    width: 28px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.body-sec .head-nav {
+    width: 100%;
+    height: 50px;
+    padding-left: 1rem;
+    background-color: #FDC800;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.body-sec .head-nav span {
+    display: inline-block;
+    width: 100px;
+}
+
+.body-sec .head-nav a {
+    color: black;
+}
+
+.body-sec .head-nav i {
+    margin: 10px;
+}
+
+.body-sec .head-nav .icon {
+    position: relative;
+    left: 1rem;
+    padding-left: 350px;
+    /* background-color: black; */
+}
+
+.body-sec {
+    background-color: #F0F4F9;
+    height: 600px;
+
+}
+
+
+.loading-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Loading {
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: relative;
+    bottom: 100px;
+    border-radius: 50%;
+    animation: show 0.4s linear infinite;
+}
+
+@keyframes show {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.body-sec .container .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    text-align: center;
+}
+
+.body-sec .container .main-nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.body-sec .container .main-nav .logo img {
+    width: 60px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.body-sec .container .main-nav .logo p {
+    text-transform: uppercase;
+}
+
+.body-sec .container .main-nav .nav-links {
+    margin-left: 200px;
+}
+
+.body-sec .container .main-nav .nav-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+.body-sec .container .main-nav .nav-links a:hover{
+    color: #FDC800;
+   
+}
+
+.body-sec .container .main-nav .right-nav-sec .sign-up-style {
+    width: 90px;
+    height: 38px;
+    background-color: #FDC800;
+    border: solid 1px white;
+    border-radius: 8%;
+}
+
+.body-sec .container .main-nav .right-nav-sec a i {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 0.5rem;
+    padding-top: 10px;
+    text-align: center;
+    border: solid 1px #CCC;
+    border-radius: 8%;
+
+}
+
+.body-sec .container .main-nav a.link-list {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.body-sec .container .main-nav a.link-list:hover+.nav-links {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: absolute;
+    top: 10vh;
+    left: -50px;
+    width: 300px;
+
+}
+
+.body-sec .container .main-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.body-sec .container .main-sec .left-sec_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px;
+
+}
+
+.body-sec .container .main-sec .left-sec_main h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    top: 1rem;
+}
+
+.body-sec .container .main-sec .left-sec_main h1 {
+    font-weight: 100;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.body-sec .container .main-sec .left-sec_main button {
+    display: inline;
+    width: 170px;
+    height: 50px;
+    background-color: #FDC800;
+    border-radius: 6%;
+    border: solid 2px #CCC;
+
+
+}
+
+.body-sec .container .main-sec .left-sec_main .distinc {
+
+    background-color: white;
+    position: relative;
+    left: 180px;
+    bottom: 72px;
+}
+
+
+.body-sec .container .main-sec .right-sec_main img {
+    width: 450px;
+    height: 370px;
+    position: relative;
+    left: 50px;
+}
+
+.bar-sec .container .upcomming {
+    width: 900px;
+    height: 140px;
+    background-color: #002147;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: -70px auto;
+}
+.bar-sec .container .upcomming:hover{
+    transform: scale(1.1,1.1);
+}
+.bar-sec .container .upcomming img {
+    width: 150px;
+    height: 140px;
+}
+
+.bar-sec .container .upcomming p {
+    width: 300px;
+    font-size: 30px;
+    word-wrap: break-word;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bar-sec .container .upcomming p span {
+    color: #FDC800;
+}
+
+.bar-sec .container .upcomming .time span.num {
+
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    right: 40px;
+
+}
+
+.bar-sec .container .upcomming .time span {
+    padding-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    right: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.courses .container p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.courses .container .boxes {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+
+
+
+}
+
+.courses .container .boxes .box {
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    width: 300px;
+    height: 260px;
+    border: solid 1.5px #ccc;
+    border-radius: 5px;
+
+}
+.courses .container .boxes .box:hover{
+    transform: scale(1.1 , 1.1);
+}
+
+.courses .container .boxes .box .pic1 img {
+    width: 299px;
+}
+
+.courses .container .boxes .box .pic2 img {
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    box-shadow: 5px 5px #ccc, -5px -5px #ccc;
+}
+
+.courses .container .boxes .box h4 {
+    font-size: 1rem;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+}
+
+.courses .container .boxes .box h6 {
+    position: relative;
+    top: -35px;
+    left: 20px;
+    color: #757575;
+}
+
+.container .story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-top: 200px;
+    gap: 20px;
+}
+
+.container .story .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .story .left .picture2 {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.container .story .left .brief1 {
+    position: relative;
+    bottom: 30px;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.container .story .left .brief1 h6 {
+    color: #7f7f7f;
+}
+
+.container .story .rigth {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container .story .rigth h2 {
+    font-size: 30px;
+    position: relative;
+    bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+
+.container .story .rigth span {
+    position: relative;
+    color: #FDC800;
+}
+
+.container .story .rigth h6 {
+    width: 360px;
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 15px;
+    position: relative;
+    bottom: 90px;
+    color: #212529;
+}
+
+.container .story .rigth h5 {
+    position: relative;
+    bottom: 50px;
+}
+
+.container .story .rigth .brief2 {
+    width: 380px;
+    height: 80px;
+    background-color: #F0F4F9;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+}
+
+.container .story .rigth .brief2 .im {
+    position: relative;
+    right: 20px;
+}
+
+.container .story .rigth .brief2 h5 {
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+}
+
+.container .story .rigth .brief2 h6 {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    color: #757575;
+}
+
+section .container {}
+
+section .container .parts {
+    background-color: #F0F4F9;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+section .container .parts .sec {
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    right: 100px;
+}
+
+section .container .parts .sec h2 {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 80px;
+}
+
+
+section .container .parts .sec p {
+    font-size: 10px;
+    color: #00B2B2;
+    font-weight: bold;
+    position: relative;
+    left: 80px;
+    top: 10px;
+}
+
+section .container .input_box {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section .container .input_box .rigth-div {
+    position: relative;
+    bottom: 60px;
+}
+
+section .container .input_box .rigth-div h5 {
+    color: #FDC800;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+section .container .input_box .rigth-div h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+section .container .input_box .rigth-div .email {
+
+    width: 320px;
+    height: 30px;
+    border: solid 2px #ccc;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+}
+
+section .container .input_box .rigth-div .email a {
+    color: black;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+section .container .input_box .rigth-div .email input {
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border: none;
+    color: #BDBDBD;
+}
+
+section .container .input_box .rigth-div .email button {
+    margin: 2px;
+    width: 100px;
+    background-color: #FDC800;
+    border: hidden;
+    border-radius: 2px;
+    position: relative;
+    left: 12px;
+}
+
+footer {
+    background-color: #002147;
+    height: 600px;
+    margin-top: 50px;
+}
+
+footer .container .footer {
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 50px;
+}
+
+footer .container .footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    list-style: none;
+}
+
+footer .container .footer .icons1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+footer .container .footer .icons1  .img {
+    position: absolute;
+    top: 20px;
+}
+footer .container .footer a:hover{
+    color: #FDC800;
+}
+
+footer .container .footer .icons1  .i1 {
+    position: absolute;
+    top: 100px;
+}
+footer .container .footer .icons1  .i2{
+    position: absolute;
+    bottom: 210px;
+}
+footer .container .footer .icons1  .i3{
+    position: absolute;
+    bottom: 160px;
+}
+
+footer .container .footer .info {
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+    position: relative;
+}
+footer .container .footer .info h3{
+    font-size: 23px;
+    position: absolute;
+    left: -20px;
+    bottom: 300px;
+}
+
+footer .container .footer .info .special {
+    position: relative;
+    top: 20px;
+}
+
+footer .container .footer  {
+    padding-top: 20px;
+}
+
+footer .container .footer  a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer .container .footer .informations {
+    position: relative;
+    bottom: 60px;
+}
+
+footer .container .footer .more {
+    position: relative;
+    top: 35px;
+}
+
+.container .copy-right {
+    position: relative;
+    bottom: 80px;
+    width: 850px;
+    height: 80px;
+    background-color: #FDC800;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.container .copy-right p {
+    padding-left: 40px;
+
+}
+
+.container .copy-right .icns a {
+    color: #002147;
+    padding-right: 30px;
+
+}
+
+@media (max-width:922px) {
+    .body-sec .container .main-nav .nav-links {
+        display: none;
+    }
+
+    .body-sec .container .main-nav a.link-list {
+        display: inline-block;
+    }
+
+    .body-sec .head-nav {
+        display: none;
+    }
+
+    .body-sec .container .main-sec {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: none;
+    }
+
+    .body-sec .container .main-sec .left-sec_main {
+        display: flex;
+        gap: 20px;
+    }
+
+    .body-sec .container .main-sec .right-sec_main img {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 80px;
+        padding-bottom: 100px;
+
+    }
+
+    .bar-sec .container .upcomming .time {
+        position: relative;
+        right: 60px;
+        width: 300px;
+
+    }
+
+    .courses .container .boxes {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+    }
+
+    .container .story {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 200px;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .container .story .rigth .brief2 {
+
+        background-color: #F0F4F9;
+        border-radius: 5px;
+        position: relative;
+        left: 20px;
+        bottom: 40px;
+    }
+
+    section .container .parts {
+        /* background-color: #F0F4F9; */
+        width: 700px;
+        height: 400px;
+        position: relative;
+        bottom: 200px;
+        left: 120px;
+    }
+
+    section .container .input_box {
+        padding-top: 50px;
+        display: grid;
+        gap: 100px;
+        position: relative;
+        bottom: 200px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 200px;
+    }
+
+    .container .copy-right {
+        position: relative;
+        bottom: 280px;
+        width: 500px;
+    }
+    
+}
